@@ -1,5 +1,11 @@
 {
-  "plugins": ["react", "react-hooks", "import", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "import",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
@@ -30,21 +36,16 @@
         "react/display-name": "off",
         "react/prop-types": "off",
         "semi": ["error", "always"],
-        "@typescript-eslint/semi": ["error", "always"],
-        "comma-dangle": [
-          "error",
-          {
-            "arrays": "never",
-            "objects": "always-multiline",
-            "imports": "never",
-            "exports": "never",
-            "functions": "never"
-          }
-        ],
+        "comma-dangle": ["error", "always-multiline"],
         "import/order": [
           "error",
           {
-            "groups": ["builtin", "external", "internal", ["parent", "sibling", "index"]],
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              ["parent", "sibling", "index"]
+            ],
             "pathGroups": [
               { "pattern": "react", "group": "builtin", "position": "after" },
               {
