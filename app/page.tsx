@@ -1,4 +1,5 @@
 import {
+  About,
   Education,
   Project,
   WorkExperience,
@@ -7,6 +8,7 @@ import {
 export default function page() {
   return (
     <div>
+      <About />
       <WorkExperience />
       <Project />
       <Education />
