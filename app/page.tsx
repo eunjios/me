@@ -4,6 +4,7 @@ import {
   Project,
   WorkExperience,
 } from '../src/components/content/resume';
+import { Footer } from '../src/components/layout';
 
 export default function page() {
   return (
@@ -12,6 +13,7 @@ export default function page() {
       <WorkExperience />
       <Project />
       <Education />
+      <Footer />
     </div>
   );
 }
