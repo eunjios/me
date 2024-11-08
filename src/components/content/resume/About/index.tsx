@@ -1,5 +1,5 @@
-import { Callout, LabelContent } from '../../../ui';
 import { about } from './index.css';
+import { Callout, LabelContent } from '../../../ui';
 
 const About = () => {
   return (
