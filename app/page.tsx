@@ -1,7 +1,9 @@
+import { WorkExperience } from '../src/components/content/resume';
+
 export default function page() {
   return (
     <div>
-      <p>이은지</p>
+      <WorkExperience />
     </div>
   );
 }
