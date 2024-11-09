@@ -1,4 +1,4 @@
-import { Section, Title } from '../../../ui';
+import { Section, Title } from '@/components/ui';
 
 const WorkExperience = () => {
   return (

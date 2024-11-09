@@ -1,4 +1,4 @@
-import { Section, Text, Title } from '../../../ui';
+import { Section, Text, Title } from '@/components/ui';
 
 const Education = () => {
   return (

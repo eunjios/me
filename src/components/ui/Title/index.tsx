@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 
 import { Text } from '../Text';
+
 import { container, text, underline } from './index.css';
 
 interface BaseProps {

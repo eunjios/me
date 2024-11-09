@@ -3,8 +3,8 @@ import {
   Education,
   Project,
   WorkExperience,
-} from '../src/components/content/resume';
-import { Footer } from '../src/components/layout';
+} from '@/components/content/resume';
+import { Footer } from '@/components/layout';
 
 export default function page() {
   return (

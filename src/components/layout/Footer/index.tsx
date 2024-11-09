@@ -1,7 +1,8 @@
 import { SiGithub, SiVelog } from 'react-icons/si';
 
+import { Text } from '@/components/ui';
+
 import { footer, icons } from './index.css';
-import { Text } from '../../ui';
 
 const Footer = () => {
   return (
