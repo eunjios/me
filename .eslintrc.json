@@ -7,10 +7,11 @@
     "prettier"
   ],
   "extends": [
+    "next",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended",
     "plugin:@next/next/recommended",
+    "plugin:prettier/recommended",
     "prettier"
   ],
   "parserOptions": {
@@ -28,7 +29,7 @@
   },
   "overrides": [
     {
-      "files": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+      "files": ["./**/*.{js,jsx,ts,tsx}"],
       "rules": {
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/no-unused-vars": "warn",
@@ -41,26 +42,34 @@
           "error",
           {
             "groups": [
-              "builtin",
-              "external",
+              ["builtin", "external"],
               "internal",
-              ["parent", "sibling", "index"]
+              ["parent", "sibling", "index", "type"],
+              "unknown"
             ],
             "pathGroups": [
-              { "pattern": "react", "group": "builtin", "position": "after" },
               {
-                "pattern": "react-dom",
+                "pattern": "{react,react-dom,next,next/**}",
                 "group": "builtin",
+                "position": "before"
+              },
+              {
+                "pattern": "{@/**,@public/**}",
+                "group": "internal",
                 "position": "after"
               },
-              { "pattern": "next", "group": "builtin", "position": "after" }
+              {
+                "pattern": "./*.css",
+                "group": "unknown",
+                "position": "after"
+              }
             ],
-            "pathGroupsExcludedImportTypes": ["react", "react-dom", "next"],
+            "pathGroupsExcludedImportTypes": ["builtin"],
+            "newlines-between": "always",
             "alphabetize": {
               "order": "asc",
               "caseInsensitive": true
-            },
-            "newlines-between": "always"
+            }
           }
         ]
       }
