@@ -1,15 +1,9 @@
 {
-  "trailingComma": "none",
-  "overrides": [
-    {
-      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
-      "options": {
-        "trailingComma": "es5"
-      }
-    }
-  ],
+  "trailingComma": "all",
   "semi": true,
+  "useTabs": false,
   "tabWidth": 2,
+  "endOfLine": "auto",
   "singleQuote": true,
   "printWidth": 80
 }
