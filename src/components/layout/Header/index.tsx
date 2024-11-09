@@ -1,8 +1,9 @@
 import Image from 'next/image';
 
+import { Text } from '@/components/ui';
+import Avatar from '@public/assets/avatar.jpeg';
+
 import { avatar, header, hideOnMobile, nav, wrap } from './index.css';
-import Avatar from '../../../../public/assets/avatar.jpeg';
-import { Text } from '../../ui/Text';
 
 const Header = () => {
   return (

@@ -1,4 +1,5 @@
 import { Text } from '../Text';
+
 import { content, left, wrap } from './index.css';
 
 interface Props {

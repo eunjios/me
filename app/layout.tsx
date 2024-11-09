@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
-
 import localFont from 'next/font/local';
+import React from 'react';
 
-import { Container, Header } from '../src/components/layout';
 import '../src/css/globals.css';
+import { Container, Header } from '@/components/layout';
 
 const pretendard = localFont({
   src: '../public/fonts/pretendard.woff2',
