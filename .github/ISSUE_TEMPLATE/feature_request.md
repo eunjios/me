@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea for this project or describe what you work on
-title: "[Feature]"
+title: "[Feature] "
 labels: ''
 assignees: eunjios
 
