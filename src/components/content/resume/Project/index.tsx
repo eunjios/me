@@ -1,21 +1,30 @@
-import { LabelContent, Section, Title } from '@/components/ui';
-import { getPostId } from '@/utils';
+import { LabelContent, Section, Text, Title } from '@/components/ui';
+import { projects } from '@/constants/project';
+import type { Project } from '@/types/data';
 
-interface Props {
-  title: string;
-  text: string;
-}
+import { block, mgBottom } from './index.css';
 
-const Project = ({ title, text }: Props) => {
-  const href = `/project/${getPostId(title)}`;
-
+const Project = () => {
   return (
     <>
       <Title>Project</Title>
-      <Section date="2024.06 - 2024.11">
-        <Section.SubtitleLink href={href}>{title}</Section.SubtitleLink>
-        <Section.Text>{text}</Section.Text>
-      </Section>
+      {projects.map((project) => (
+        <Section key={project.id} date={project.date}>
+          <Section.SubtitleLink href={`/project/${project.id}`}>
+            {project.title}
+          </Section.SubtitleLink>
+          <Section.Text className={mgBottom}>{project.about}</Section.Text>
+          {project.details.map((detail) => (
+            <LabelContent key={detail.title} type="small" label={detail.title}>
+              {detail.texts.map((text, i) => (
+                <Text key={i} className={block}>
+                  {text}
+                </Text>
+              ))}
+            </LabelContent>
+          ))}
+        </Section>
+      ))}
     </>
   );
 };

@@ -11,10 +11,7 @@ export default function page() {
     <div>
       <About />
       <WorkExperience />
-      <Project
-        title="Neuro Launcher"
-        text="업무의 생산성을 높여주는 MacOS 데스크탑 애플리케이션 개발"
-      />
+      <Project />
       <Education />
       <Footer />
     </div>
