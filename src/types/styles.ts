@@ -9,6 +9,7 @@ export const colors = {
 } as const;
 
 export const fontSizes = {
+  xxs: 'var(--font-size-xxs)',
   xs: 'var(--font-size-xs)',
   s: 'var(--font-size-s)',
   m: 'var(--font-size-m)',
