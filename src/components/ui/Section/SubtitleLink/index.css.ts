@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css';
 
 export const link = style({
-  display: 'inline-block',
+  display: 'block',
   gap: '4px',
   alignItems: 'center',
   borderBottom: '2px dashed var(--color-text-primary)',
