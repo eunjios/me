@@ -1,10 +1,10 @@
 import { BaseProps } from './@types';
-import { Container } from './Section.Container';
-import { Content } from './Section.Content';
-import { SectionDate } from './Section.Date';
-import { Subtitle } from './Section.Subtitle';
-import { SubtitleLink } from './Section.SubtitleLink';
-import { SectionText } from './Section.Text';
+import { SectionContainer } from './Container';
+import { SectionContent } from './Content';
+import { SectionDate } from './Date';
+import { SectionSubtitle } from './Subtitle';
+import { SubtitleLink } from './SubtitleLink';
+import { SectionText } from './Text';
 
 export type SectionProps = {
   date?: string;
@@ -20,10 +20,10 @@ const Section = ({ children, date }: SectionProps) => {
   );
 };
 
-Section.Container = Container;
+Section.Container = SectionContainer;
 Section.Date = SectionDate;
-Section.Content = Content;
-Section.Subtitle = Subtitle;
+Section.Content = SectionContent;
+Section.Subtitle = SectionSubtitle;
 Section.Text = SectionText;
 Section.SubtitleLink = SubtitleLink;
 
