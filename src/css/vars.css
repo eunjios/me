@@ -1,4 +1,5 @@
 :root {
+  --font-size-xxs: 12px;
   --font-size-xs: 14px;
   --font-size-s: 16px;
   --font-size-m: 18px;
@@ -32,13 +33,15 @@
 
   --color-primary: #abca9e;
   --color-primary-1-10: rgba(171, 202, 158, 0.1);
+  --color-primary-1-20: rgba(171, 202, 158, 0.2);
   --color-primary-1-30: rgba(171, 202, 158, 0.3);
   --color-primary-1-50: rgba(171, 202, 158, 0.5);
   --color-primary-1-70: rgba(171, 202, 158, 0.7);
   --color-primary-1-90: rgba(171, 202, 158, 0.9);
 
   --color-background: var(--gray-50);
-  --color-background-callout: var(--gray-100);
+  --color-bg-callout: var(--gray-100);
+  --color-bg-tooltip: var(--color-primary-1-20);
   --color-text-primary: var(--gray-900);
   --color-text-secondary: var(--gray-400);
   --color-border: var(--gray-200);
@@ -48,7 +51,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--gray-800);
-    --color-background-callout: var(--gray-700);
+    --color-bg-callout: var(--gray-700);
+    --color-bg-tooltip: var(--color-primary-1-20);
     --color-text-primary: var(--gray-50);
     --color-text-secondary: var(--gray-400);
     --color-border: var(--gray-700);
