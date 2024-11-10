@@ -1,4 +1,4 @@
-import { style } from '@vanilla-extract/css';
+import { style, styleVariants } from '@vanilla-extract/css';
 
 export const wrap = style({
   display: 'flex',
@@ -13,9 +13,15 @@ export const wrap = style({
   },
 });
 
-export const left = style({
-  flexShrink: 0,
-  width: '124px',
+export const left = styleVariants({
+  default: {
+    flexShrink: 0,
+    width: '124px',
+  },
+  small: {
+    flexShrink: 0,
+    width: '72px',
+  },
 });
 
 export const content = style({
