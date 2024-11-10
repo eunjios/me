@@ -1,6 +1,7 @@
-import { Text } from '../Text';
-import { date, dateHeight } from './@styles/index.css';
-import { BaseProps } from './@types';
+import { Text } from '../../Text';
+import { BaseProps } from '../@types';
+
+import { date, dateHeight } from './index.css';
 
 export const SectionDate = ({ children }: BaseProps) => {
   return (
