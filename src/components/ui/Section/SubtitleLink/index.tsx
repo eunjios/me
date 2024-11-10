@@ -12,7 +12,7 @@ type Props = {
   href: string;
 } & BaseProps;
 
-const SubTitleLinkContent = ({ children, href }: Props) => {
+export const SubtitleLink = ({ children, href }: Props) => {
   return (
     <div className={title}>
       <TextWithTooltip tooltipText="클릭해서 자세히 보기">
@@ -24,8 +24,4 @@ const SubTitleLinkContent = ({ children, href }: Props) => {
       </TextWithTooltip>
     </div>
   );
-};
-
-export const SubtitleLink = ({ children, href }: Props) => {
-  return <SubTitleLinkContent href={href}>{children}</SubTitleLinkContent>;
 };
