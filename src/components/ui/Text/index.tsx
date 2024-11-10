@@ -26,6 +26,7 @@ const Text = ({
   color = 'textPrimary',
   fontSize = 'm',
   fontWeight = 'medium',
+  style,
   ...props
 }: TextProps) => {
   return (
@@ -37,6 +38,7 @@ const Text = ({
         fontWeight: fontWeights[fontWeight],
         lineHeight: lineHeights[fontSize],
         position: 'relative',
+        ...style,
       }}
       {...props}
     >
