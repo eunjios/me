@@ -11,7 +11,7 @@ type Props = {
   href: string;
 } & BaseProps;
 
-export const SubTitleLinkContent = ({ children, href }: Props) => {
+export const SubtitleLink = ({ children, href }: Props) => {
   return (
     <div className={title}>
       <Link href={href} className={link}>
