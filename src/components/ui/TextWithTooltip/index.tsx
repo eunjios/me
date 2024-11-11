@@ -1,7 +1,6 @@
-import { useTooltip } from '@/components/ui/TextWithTooltip/@hooks/useTooltip';
-
 import { TooltipProvider } from './@context';
 import { Tooltip } from './Tooltip';
+import { useTooltip } from '@/components/ui/TextWithTooltip/@hooks/useTooltip';
 
 interface Props {
   children: React.ReactNode;

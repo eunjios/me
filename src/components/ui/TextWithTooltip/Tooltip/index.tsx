@@ -1,8 +1,7 @@
 'use client';
 
-import { useTooltip } from '@/components/ui/TextWithTooltip/@hooks/useTooltip';
-
 import { Text } from '../../Text';
+import { useTooltip } from '@/components/ui/TextWithTooltip/@hooks/useTooltip';
 
 import { tooltip } from './index.css';
 
