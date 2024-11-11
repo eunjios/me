@@ -43,8 +43,7 @@
           {
             "groups": [
               ["builtin", "external"],
-              "internal",
-              ["parent", "sibling", "index", "type"],
+              ["internal", "parent", "sibling", "index", "type"],
               "unknown"
             ],
             "pathGroups": [
@@ -54,17 +53,11 @@
                 "position": "before"
               },
               {
-                "pattern": "{@/**,@public/**}",
-                "group": "internal",
-                "position": "after"
-              },
-              {
                 "pattern": "./*.css",
                 "group": "unknown",
                 "position": "after"
               }
             ],
-            "pathGroupsExcludedImportTypes": ["builtin"],
             "newlines-between": "always",
             "alphabetize": {
               "order": "asc",
