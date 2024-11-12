@@ -4,7 +4,6 @@ import {
   Project,
   WorkExperience,
 } from '@/components/content/resume';
-import { Footer } from '@/components/layout';
 
 export default function page() {
   return (
@@ -13,7 +12,6 @@ export default function page() {
       <WorkExperience />
       <Project />
       <Education />
-      <Footer />
     </div>
   );
 }
