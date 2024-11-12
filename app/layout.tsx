@@ -3,7 +3,7 @@ import localFont from 'next/font/local';
 import React from 'react';
 
 import '../src/css/globals.css';
-import { Container, Header } from '@/components/layout';
+import { Container, Footer, Header } from '@/components/layout';
 
 const pretendard = localFont({
   src: '../public/fonts/pretendard.woff2',
@@ -13,7 +13,7 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: '@eunjios',
+  title: '이은지 | Frontend Engineer',
   description: '이은지의 포트폴리오',
 };
 
@@ -27,6 +27,9 @@ export default function RootLayout({
       <body className={pretendard.className}>
         <Header />
         <Container>{children}</Container>
+        <Container>
+          <Footer />
+        </Container>
       </body>
     </html>
   );
