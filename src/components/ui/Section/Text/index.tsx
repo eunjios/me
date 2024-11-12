@@ -3,9 +3,9 @@ import { BaseProps } from '../@types';
 
 type Props = BaseProps & React.HTMLAttributes<HTMLDivElement>;
 
-export const SectionText = ({ children, ...props }: Props) => {
+export const SectionText = ({ children, style, ...props }: Props) => {
   return (
-    <div {...props}>
+    <div style={{ marginBottom: '8px', ...style }} {...props}>
       <Text>{children}</Text>
     </div>
   );

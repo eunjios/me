@@ -1,3 +1,5 @@
+import { Text } from '../Text';
+
 import { li, ul } from './index.css';
 
 interface Props {
@@ -9,7 +11,11 @@ export const Bullet = ({ children }: Props) => {
 };
 
 const Item = ({ children }: Props) => {
-  return <div className={li}>{children}</div>;
+  return (
+    <div className={li}>
+      <Text>{children}</Text>
+    </div>
+  );
 };
 
 Bullet.Item = Item;
