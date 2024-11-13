@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css';
 
-export const mgBottom = style({
-  marginBottom: '8px',
+export const mg = style({
+  margin: '16px 0 8px',
 });
 
 export const block = style({
