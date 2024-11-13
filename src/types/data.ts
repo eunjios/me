@@ -1,16 +1,3 @@
-export interface Project {
-  id: string;
-  title: string;
-  date: string;
-  about: string;
-  details: ProjectDetail[];
-}
-
-export interface ProjectDetail {
-  title: string;
-  texts: string[];
-}
-
 export interface ProjectData {
   title: string;
   about: string;
@@ -30,5 +17,44 @@ export interface ProjectData {
   troubleshooting: {
     title: string;
     details: string[];
+  }[];
+}
+
+export interface AboutData {
+  title: string;
+  text: string;
+}
+
+export interface WorkData {
+  company: string;
+  period: {
+    start: string;
+    end: string;
+  };
+  job: string;
+  about: string;
+  techStack: string;
+}
+
+export interface EducationData {
+  title: string;
+  period: {
+    start: string;
+    end: string;
+  };
+  texts: string[];
+}
+
+export interface ProjectOverviewData {
+  id: string;
+  title: string;
+  period: {
+    start: string;
+    end: string;
+  };
+  about: string;
+  details: {
+    title: string;
+    text: string;
   }[];
 }
