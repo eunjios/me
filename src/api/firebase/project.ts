@@ -1,4 +1,4 @@
-import { doc, getDoc } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 
 import { db } from '@/firebase/config';
 import { ProjectData } from '@/types/data';
@@ -12,4 +12,9 @@ export const getProject = async (id: string) => {
   }
 
   return docSnap.data() as ProjectData;
+};
+
+export const getAllProjectIds = async () => {
+  const querySnapshot = await getDocs(collection(db, 'projects'));
+  return querySnapshot.docs.map((doc) => doc.id);
 };
