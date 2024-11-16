@@ -4,7 +4,7 @@ import { colors } from '@/types';
 
 export const link = style({
   display: 'inline-block',
-  marginRight: '8px',
+  margin: '0 8px 8px 0',
   background: colors.backgroundLink,
   color: colors.textLink,
   padding: '0 8px 0 12px',
