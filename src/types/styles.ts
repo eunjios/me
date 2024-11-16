@@ -6,6 +6,8 @@ export const colors = {
   textSecondary: 'var(--color-text-secondary)',
   border: 'var(--color-border)',
   primary: 'var(--color-primary1)',
+  backgroundLink: 'var(--color-bg-link)',
+  textLink: 'var(--color-text-link)',
 } as const;
 
 export const fontSizes = {
