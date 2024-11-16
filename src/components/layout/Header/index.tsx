@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Text } from '@/components/ui';
 import Avatar from '@public/assets/avatar.jpeg';
@@ -11,15 +12,19 @@ const Header = () => {
       <div className={header}>
         <ul className={nav}>
           <li>
-            <Image src={Avatar} className={avatar} alt="" />
+            <Link href={'/'}>
+              <Image src={Avatar} className={avatar} alt="" />
+            </Link>
           </li>
           <li>
-            <Text fontSize="xl" fontWeight="bold">
-              이은지
-            </Text>
-            <Text fontSize="xl" fontWeight="bold" className={hideOnMobile}>
-              {' | Frontend Engineer'}
-            </Text>
+            <Link href={'/'}>
+              <Text fontSize="xl" fontWeight="bold">
+                이은지
+              </Text>
+              <Text fontSize="xl" fontWeight="bold" className={hideOnMobile}>
+                {' | Frontend Engineer'}
+              </Text>
+            </Link>
           </li>
         </ul>
       </div>
