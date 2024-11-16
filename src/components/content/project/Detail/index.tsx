@@ -21,10 +21,14 @@ export const ProjectDetail = async ({ id }: { id: string }) => {
         </Callout>
       </div>
       <Section>
-        <Section.Subtitle>주요 기능</Section.Subtitle>
-        <Section.Text>
-          <Detail texts={project.features} />
-        </Section.Text>
+        {project.features && (
+          <>
+            <Section.Subtitle>주요 기능</Section.Subtitle>
+            <Section.Text>
+              <Detail texts={project.features} />
+            </Section.Text>
+          </>
+        )}
       </Section>
       <Section>
         <Section.Subtitle>기여 내용</Section.Subtitle>
@@ -34,18 +38,25 @@ export const ProjectDetail = async ({ id }: { id: string }) => {
               key={index}
               title={contribution.title}
               texts={contribution.details}
+              links={contribution.links}
             />
           ))}
         </Section.Text>
       </Section>
-      <Section>
-        <Section.Subtitle>트러블슈팅</Section.Subtitle>
-        <Section.Text>
-          {project.troubleshooting.map((trouble, index) => (
-            <Detail key={index} title={trouble.title} texts={trouble.details} />
-          ))}
-        </Section.Text>
-      </Section>
+      {project.troubleshooting && (
+        <Section>
+          <Section.Subtitle>트러블슈팅</Section.Subtitle>
+          <Section.Text>
+            {project.troubleshooting.map((trouble, index) => (
+              <Detail
+                key={index}
+                title={trouble.title}
+                texts={trouble.details}
+              />
+            ))}
+          </Section.Text>
+        </Section>
+      )}
     </>
   );
 };
