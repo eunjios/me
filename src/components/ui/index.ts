@@ -5,3 +5,4 @@ export * from './Text';
 export * from './Title';
 export * from './Bullet';
 export * from './Detail';
+export * from './ExternalLink';
